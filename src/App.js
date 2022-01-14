@@ -92,7 +92,7 @@ class App extends Component {
 
   onPictureSubmit = () => {
     this.setState({imageUrl: this.state.input});
-      fetch('https://rebeccaa-facerecognitionbrain.herokuapp.com/imageurl', {
+      fetch('https://agile-plateau-47799.herokuapp.com/imageurl', {
         method: 'post',
         headers: {
           'Content-Type': 'application/json'
@@ -104,7 +104,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('https://rebeccaa-facerecognitionbrain.herokuapp.com/image', {
+          fetch('https://agile-plateau-47799.herokuapp.com/image', {
               method: 'put',
               headers: {
                 'Content-Type': 'application/json'

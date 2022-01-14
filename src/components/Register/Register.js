@@ -24,7 +24,7 @@ class Register extends React.Component {
 
     onSubmitSignIn = () => {
         // 1. submit data & fetch the resource (resource = /register route endpoint):
-        fetch('https://rebeccaa-facerecognitionbrain.herokuapp.com/register', {
+        fetch('https://agile-plateau-47799.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             // convert string to JSON for server to understand:

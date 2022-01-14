@@ -20,7 +20,7 @@ class SignIn extends React.Component {
     onSubmitSignIn = () => {
         // console.log(this.state);
         // 1. submit data & fetch the resource (resource = /signin route endpoint):
-        fetch('https://rebeccaa-facerecognitionbrain.herokuapp.com/signin', {
+        fetch('https://agile-plateau-47799.herokuapp.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             // convert string to JSON for server to understand:
